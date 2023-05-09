@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,28 +19,6 @@
       </script>
 </head>
 <body>
-<div>
-<c:import url="/common/jsp/navibar.jsp"/>
-</div>
-<div style="width: 500px">
-<c:out value="${ msg  }"></c:out>
-<table class="table">
-<tr>
-<th style="width: 100px">이름</th>
-<th style="width: 400px">이메일</th>
-</tr>
-<c:if test="${ empty data  }">
-<tr>
-<td colspan="2">검색된 회원 정보가 존재하지 않습니다.</td>
-</tr>
-</c:if>
-<c:forEach var="member" items="${  data }">
-<tr>
-<td><c:out value="${ member.name  }"></c:out></td>
-<td><c:out value="${ member.email  }"></c:out></td>
-</tr>
-</c:forEach>
-</table>
-</div>
+Chain C에서 응답되는 페이지
 </body>
 </html>
