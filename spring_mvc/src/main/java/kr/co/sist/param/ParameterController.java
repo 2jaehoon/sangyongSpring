@@ -161,5 +161,11 @@ public class ParameterController {
 			return "login_result";
 		}
 		
+		//views에 하위 폴더를 만들고 jsp를 구분하여 저장할 때.
+		@GetMapping("/sub_folder.do")
+		public String subFolder() {
+		return "sub/test";
+		}
+		
 		
 }//class
