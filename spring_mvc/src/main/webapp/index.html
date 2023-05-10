@@ -24,9 +24,10 @@
      });//click
       });//ready
       </script>
+
 </head>
 <body>
-<ul>
+<ul class="list-group">
 <li><a href="hell.do">처음하는 Spring MVC</a></li>
 <li><a href="get.do">GET 방식의 요청</a></li>
 <li>
@@ -46,9 +47,9 @@
 <input type="button"  value="요청" class="btn btn-warning" id="btn"/>
 </form>
 </li>
-<li><a href="work/path.do">가상의 경로를 사용한 요청</a></li>
-<li><a href="same_url.do">요청 URL명과 응답 JSP명이 같은 경우</a></li>
-<li><a href="use_http_servlet.do">HttpServletRequest를 사용한 web parameter 처리</a></li>
+<li class="list-group-item list-group-item-secondary"><a href="work/path.do">가상의 경로를 사용한 요청</a></li>
+<li class="list-group-item list-group-item-secondary"><a href="same_url.do">요청 URL명과 응답 JSP명이 같은 경우</a></li>
+<li class="list-group-item list-group-item-secondary"><a href="use_http_servlet.do">HttpServletRequest를 사용한 web parameter 처리</a></li>
 <li><a href="single_param.do">단일형을 사용한 web parameter 처리</a></li>
 <li><a href="vo_param.do">VO를 사용한 web parameter 처리</a></li>
 <li><a href="use_request_param.do?name=test">RequestParam의 사용(단일형)</a></li>
@@ -59,6 +60,25 @@
 <li><a href="redirect_jsp.do">redirect : .jsp요청</a></li>
 <li><a href="chain_a.do">do chain A</a></li>
 <li><a href="chain_b.do">do chain B</a></li>
+
+<li><a href="include_test.do">include 연습</a></li>
+
+<li><a href="session_set.do">HttpSession 사용 값 설정</a></li>
+<li><a href="session_get.do">HttpSession 사용 값 얻기</a></li>
+<li><a href="session_remove.do">HttpSession 사용 값 삭제</a></li>
+
+<li><a href="model_set.do">Model@SessionAttributes 사용 값 설정</a></li>
+<li><a href="model_get.do">Model 사용 값 얻기(v5.이하)</a></li>
+<li><a href="model_get2.do">Model 사용 값 얻기(v5.이상)</a></li>
+<li><a href="model_http_remove.do">HttpSession 사용 값 삭제(삭제 안됨)</a></li>
+<li><a href="model_remove.do">SessionStatus 사용 값 삭제</a></li>
+
+<li><a href="add_cookie.do">Cookie 값 설정</a></li>
+<li><a href="get_cookie.do">Cookie 값 얻기(@CookieValue 사용)</a></li>
+<li><a href="remove_cookie.do">Cookie 값 삭제</a></li>
+<li><a href="upload_frm/upload_frm.jsp">파일 업로드</a></li>
+
+
 
 </ul>
 </body>
