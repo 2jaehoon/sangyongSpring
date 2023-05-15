@@ -4,5 +4,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-		
+		<bean id="tDAO" class="kr.co.sist.dao.TestDAO"/>
+		<bean id ="ts" class ="kr.co.sist.service.TestService">
+		<constructor-arg ref="tDAO"/>
+		</bean>
 </beans>
